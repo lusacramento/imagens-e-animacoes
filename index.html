@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plano de Aula Senac - Imagens e Animações" />
+    <meta name="keywords" content="HTML, CSS, imagem, animações" />
+    <meta name="author" content="Luciano Sacramento" />
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Roteiro</title>
+  </head>
+  <body>
+    <h1>Plano de aula - Senac</h1>
+    <p class="credits">Feito por: <span class="author">Luciano Sacramento</span>.</p>
+    <h2><b>Descrição</b>:</h2>
+    <p>
+      “Cria gráficos, imagens e animações otimizadas para a interface do
+      website, seguindo princípios de comunicação visual coerentes com o
+      projeto".
+    </p>
+
+    <h2>Teoria</h2>
+    <h3>Problemas</h3>
+    <ul>
+      <li>Imagens muito grandes (largura e altura);</li>
+      <li>Imagens muito pesadas (excesso de KB);</li>
+      <li>Formato da imagem inadequado (cada formato tem seu propósito);</li>
+      <li>Imagens “quebradas” (caminho/URL incorreto);</li>
+      <li>Qualidade de compressão x Peso.</li>
+    </ul>
+
+    <h3>Vantagens de Otimização</h3>
+    <ul>
+      <li>Deixa o carregamento do site mais rápido;</li>
+      <li>Aprimora a experiência de quem usa o site/aplicativo;</li>
+      <li>
+        Melhora as chances de o site ficar em melhores posições no Google;
+      </li>
+      <li>
+        Diminui o número de abandonos do site (que acontecem porque a página
+        demorou demais para carregar);
+      </li>
+      <li>Aumenta o número de páginas do site visualizadas em cada sessão;</li>
+      <li>Impulsiona conversões;</li>
+      <li>Melhora suas chances de se sobressair ante projetos concorrentes.</li>
+    </ul>
+
+    <h3>Formatos de Imagem</h3>
+    <h4>JPG</h4>
+    <ul>
+      <li>Compressão com perda;</li>
+      <li>Imagens com peso mais leves;</li>
+      <li>Não suporta imagens transparentes (sem canal alfa).</li>
+    </ul>
+    <p>Ideal para <strong>fotgrafias</strong> e representações de <strong>cenas realistas</strong>.
+</p>
+    <h4>PNG</h4>
+    <ul>
+      <li>Compressão com perda;</li>
+      <li>Imagens com peso mais pesado que JPG;</li>
+      <li>Suporta transparência (canal alpha);</li>
+      <li>PNG-8 - suporta apenas 256 cores (8 bits);</li>
+      <li>PNG-24 - suporta 16.777.216 cores.</li>
+    </ul>
+<p>
+
+    PNG-8: Ideal para logos, ilustrações, gráficos, ícones e backgrounds;
+    <br>
+    PNG-24: Ideal para composição estética com sobreposição de camadas (devido sua transparência).
+    <h4>GIF</h4>
+</p>
+    <ul>
+      <li>Suporta animações;</li>
+      <li>Baixa qualidade de imagem;</li>
+      <li>Suporta somente 256 cores.</li>
+    </ul>
+    Ideal para animações de tamanho pequeno e duração curta.
+    <h4>WebP</h4>
+    <ul>
+        <li>Formato criado pela Google;</li>
+        <li>Imagens com tamanho menor comparado a JPG e PNG;</li>
+        <li>Suporta transparência (canal alpha);</li>
+        <li>Não é suportado por alguns navegadores.</li>
+    </ul>
+    <p>
+        Recomendado para todo tipo de imagem estática, porém, ainda é pouco utilizado. 
+    </p>
+    <h4>SVG</h4>
+    <ul>
+        <li>Imagem vetorial. Permite redimensionar qualquer tamanho;</li>
+        <li>Peso mais leve;</li>
+        <li>Requer experiência em design gráfico para vetorizar a imagem.</li>
+        <p>Recomendado para gráficos</p>
+    </ul>
+<h2>Tags e atributos para imagem.</h2>
+Utilização da tag e <strong>&lt;img&gt &lt;figure&gt</strong> e <strong>&lt;figcaption&gt</strong> para criar imagens.
+Propriedades:
+<ul>
+    <li><strong>src</strong> - caminho da imagem;</li>
+    <li><strong>alt</strong> - descrição da imagem;</li>
+    <li><strong>width</strong> - largura da imagem;</li>
+    <li><strong>height</strong> - altura da imagem;</li>
+    <li><strong>class</strong> - classe da imagem;</li>
+    <li><strong>id</strong> - identificador da imagem;</li>
+    <li><strong>title</strong> - título da imagem;</li>
+   
+</ul>
+  exemplo:
+  <div class="code-exemple">
+    
+        <pre class="">
+<code class = "code">&lt;figure&gt;
+    &lt;img 
+        id="img-senac" class="img" 
+        src="src/imgs/logo-senac-minas.webp" 
+        alt="logotipo do Senac nas cores azul 
+        e amarelo, em azul, no meio escrito 
+        Senac e embaixo escrito Minas Gerais"
+        width="auto"
+        height="auto"
+        title="Logo Senac MG" 
+    /&gt;
+    &lt;figcaption&gt;
+        Legenda: logotipo Senac Minas
+    &lt;/figcaption&gt;
+&lt;/figure>
+</code>
+        </pre>
+    </div>
+
+
+  <div class="fig-exemple">
+      <figure>
+            <img 
+            id="img-senac" class="img" 
+            src="src/imgs/logo-senac-minas.webp" 
+            alt="logotipo do Senac nas cores azul e amarelo, em azul, no meio escrito Senac e embaixo escrito Minas Gerais"
+            width="30%"
+            height="auto"
+            title="Logo Senac MG" usemap="#map1" ismap />
+          <figcaption>Legenda: logotipo Senac Minas</figcaption>
+          <map name="map1">
+              <area shape="rect" coords="0,0,200,200" href="#" alt="Imagem 1">
+            </map>
+        </figure>
+    </div>
+    
+    <h2>Animando Elementos com CSS</h2>
+  Utilização da proprieadade &lt;animation&gt; e suas sub-propriedades:
+  <ul>
+      <li>
+          <strong>animation-delay</strong> - atraso da animação;
+        </li>
+      <li>
+          <strong>animation-direction</strong> - direção da animação;
+      </li>
+      <li>
+          <strong>animation-duration</strong> - duração da animação;
+        </li>
+        <li>
+            <strong>animation-iteration-count</strong> - número de repetições;
+        </li>
+        <li>
+        <strong>animation-name</strong> - nome da animação;
+    </li>
+    <li>
+        <strong>animation-play-state</strong> - estado de reprodução;
+    </li>
+    <li>
+        <strong>animation-timing-function</strong> - função de tempo;
+    </li>
+    <li>
+        <strong>animation-fill-mode</strong> - modo de preenchimento.
+    </li>
+  </ul> 
+<p>
+    Utilização de <strong>@keyframes</strong>:
+</p>
+<ul>
+    <li><strong>keyframes</strong> nome da animação;</li>
+    <li><strong>from</strong> - Determina os atributos do estado inicial da animação;</li>
+    <li><strong>to</strong> - Determina os atributos do estado final da animação.</li>
+</ul>
+
+<div class="code-exemple">
+    
+    <pre class="">
+index.html
+<code class = "code">
+  &ltdiv class="animated-container"&gt
+    &lth2 class="animation"&gtExemplo&lt/h2&gt
+  &lt/div>
+</code>
+    </pre>
+</div>
+<div class="code-exemple">
+    
+    <pre class="">
+style.css
+<code class = "code">.animated-container {
+    overflow: hidden; /* necessário para transbordamento */
+  }
+  
+  .animation {
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: slide;
+    animation-direction: alternate; /* alterna entre direções */
+    animation-play-state: running; /* estado inicial da animação */
+  }
+  
+  .animation:hover {
+    animation-play-state: paused; /* pausa a animação quando passar o mouse */
+  }
+
+  @keyframes slide { /* nome da animação */
+    from {
+      margin-left: 100%;
+      color: var(--color-blue);
+    }
+  
+    to {
+      margin-left: 0%;
+      font-size: 3rem;
+      color: var(--color-yellow);
+    }
+</code>
+    </pre>
+</div>
+
+
+
+    <div class="animated-container">
+        <h2 class="animation">Exemplo</h2>   
+    </div>
+</body>
+</html>

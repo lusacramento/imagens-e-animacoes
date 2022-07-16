@@ -1,0 +1,104 @@
+:root {
+  --color-blue: rgb(3, 71, 136);
+  --color-yellow: rgb(240, 136, 1);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  margin: 3%;
+}
+
+h1,
+.credits {
+  text-align: center;
+}
+
+.author {
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-yellow);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.fig-exemple {
+  justify-content: center;
+  text-align: center;
+}
+
+.img {
+  border: solid 2px var(--color-yellow);
+}
+
+.code {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  border: solid 1px var(--color-yellow);
+  color: var(--color-black) !important;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-exemple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.animated-container {
+  overflow: hidden; /* necessário para transbordamento */
+}
+
+.animation {
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-direction: alternate-reverse; /* alterna entre direções */
+  animation-play-state: running; /* estado inicial da animação */
+}
+
+.animation:hover {
+  animation-play-state: paused; /* pausa a animação quando passar o mouse */
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    color: var(--color-blue);
+  }
+
+  to {
+    margin-left: 0%;
+    font-size: 3rem;
+    color: var(--color-yellow);
+  }
+}
