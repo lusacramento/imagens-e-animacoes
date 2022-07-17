@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Plano de Aula Senac - Imagens e Animações" />
+    <meta
+      name="description"
+      content="Plano de Aula Senac - Imagens e Animações"
+    />
     <meta name="keywords" content="HTML, CSS, imagem, animações" />
     <meta name="author" content="Luciano Sacramento" />
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <title>Roteiro</title>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Roteiro de Aula - Imagens e Animações</title>
   </head>
   <body>
     <h1>Plano de aula - Senac</h1>
-    <p class="credits">Feito por: <span class="author">Luciano Sacramento</span>.</p>
+    <p class="credits">
+      Feito por: <span class="author">Luciano Sacramento</span>.
+    </p>
+    <hr size="3" width="99%"" color="var(--color-blue)" align="center"/>
     <h2><b>Descrição</b>:</h2>
     <p>
       “Cria gráficos, imagens e animações otimizadas para a interface do
@@ -25,6 +35,7 @@
     <ul>
       <li>Imagens muito grandes (largura e altura);</li>
       <li>Imagens muito pesadas (excesso de KB);</li>
+      <li>Imagens não nítidas com baixíssima resolução;</li>
       <li>Formato da imagem inadequado (cada formato tem seu propósito);</li>
       <li>Imagens “quebradas” (caminho/URL incorreto);</li>
       <li>Qualidade de compressão x Peso.</li>
@@ -53,66 +64,170 @@
       <li>Imagens com peso mais leves;</li>
       <li>Não suporta imagens transparentes (sem canal alfa).</li>
     </ul>
-    <p>Ideal para <strong>fotgrafias</strong> e representações de <strong>cenas realistas</strong>.
-</p>
+    <p>
+      Ideal para <strong>fotgrafias</strong> e representações de
+      <strong>cenas realistas</strong>.
+    </p>
+
     <h4>PNG</h4>
     <ul>
       <li>Compressão com perda;</li>
-      <li>Imagens com peso mais pesado que JPG;</li>
+      <li>Imagens com peso maior que JPG;</li>
       <li>Suporta transparência (canal alpha);</li>
-      <li>PNG-8 - suporta apenas 256 cores (8 bits);</li>
-      <li>PNG-24 - suporta 16.777.216 cores.</li>
+      <li>Existem duas versões:</li>
+      <ul>
+        <li>
+          <strong>PNG-8</strong> - suporta apenas 256 cores (8 bits). Ideal para
+          logos, ilustrações, gráficos, ícones e backgrounds;
+        </li>
+        <li>
+          <strong>PNG-24</strong> - suporta 16.777.216 cores. PNG-24: Ideal para
+          composição estética com sobreposição de camadas (devido sua
+          transparência).
+        </li>
+      </ul>
     </ul>
-<p>
 
-    PNG-8: Ideal para logos, ilustrações, gráficos, ícones e backgrounds;
-    <br>
-    PNG-24: Ideal para composição estética com sobreposição de camadas (devido sua transparência).
     <h4>GIF</h4>
-</p>
     <ul>
       <li>Suporta animações;</li>
       <li>Baixa qualidade de imagem;</li>
       <li>Suporta somente 256 cores.</li>
     </ul>
-    Ideal para animações de tamanho pequeno e duração curta.
+    <p>
+      Ideal para <strong>animações</strong> de tamanho pequeno e duração curta.
+    </p>
+
     <h4>WebP</h4>
     <ul>
-        <li>Formato criado pela Google;</li>
-        <li>Imagens com tamanho menor comparado a JPG e PNG;</li>
-        <li>Suporta transparência (canal alpha);</li>
-        <li>Não é suportado por alguns navegadores.</li>
+      <li>Formato criado pela Google;</li>
+      <li>Imagens com tamanho menor comparado a JPG e PNG;</li>
+      <li>Suporta transparência (canal alpha);</li>
+      <li>Não é suportado por alguns navegadores.</li>
     </ul>
     <p>
-        Recomendado para todo tipo de imagem estática, porém, ainda é pouco utilizado. 
+      Recomendado para todo tipo de imagem estática, porém, ainda é pouco
+      utilizado.
     </p>
+
     <h4>SVG</h4>
     <ul>
-        <li>Imagem vetorial. Permite redimensionar qualquer tamanho;</li>
-        <li>Peso mais leve;</li>
-        <li>Requer experiência em design gráfico para vetorizar a imagem.</li>
-        <p>Recomendado para gráficos</p>
+      <li>
+        Imagem <strong>vetorial</strong>. Permite redimensionar para qualquer
+        tamanho;
+      </li>
+      <li>Peso mais leve;</li>
+      <li>Requer experiência em design gráfico para vetorizar a imagem.</li>
     </ul>
-<h2>Tags e atributos para imagem.</h2>
-Utilização da tag e <strong>&lt;img&gt &lt;figure&gt</strong> e <strong>&lt;figcaption&gt</strong> para criar imagens.
-Propriedades:
-<ul>
-    <li><strong>src</strong> - caminho da imagem;</li>
-    <li><strong>alt</strong> - descrição da imagem;</li>
-    <li><strong>width</strong> - largura da imagem;</li>
-    <li><strong>height</strong> - altura da imagem;</li>
-    <li><strong>class</strong> - classe da imagem;</li>
-    <li><strong>id</strong> - identificador da imagem;</li>
-    <li><strong>title</strong> - título da imagem;</li>
-   
-</ul>
-  exemplo:
-  <div class="code-exemple">
-    
-        <pre class="">
+    <p>Recomendado para gráficos.</p>
+
+    <h3>Otimização de Imagens</h3>
+    <h4>Edição de imagens</h4>
+    <p>
+      Precisamos adequar o tamanho da imagem e sua resolução. Este tipo de
+      tratamento pode ser feito de várias maneiras:
+    </p>
+    <ul>
+      <li>Com editor de imagens profissionais, como por exemplo:</li>
+      <ul>
+        <li>Adobe FotoShop, Adobe LiteRoom e Gimp (Linux) para fotografias;</li>
+        <li>
+          Adobe Illustrator e InkScape (Linux) para imagens e gráficos
+          vetoriais.
+        </li>
+      </ul>
+      <li>Serviços <i>on-line</i> como por exemplo:</li>
+      <ul>
+        <li><a href="https://tinyjpg.com/">TinyPNG/TinyJPG</a></li>
+        <li><a href="https://www.jpegmini.com/">JPEG Mini</a></li>
+      </ul>
+      <li>Plugins e conversores de imagem como por exemplo:</li>
+      <ul>
+        <li>Plugins de Wordpress como:</li>
+        <ul>
+          <li><a href="https://wordpress.org/plugins/wp-smushit/">Smush</a></li>
+          <li><a href="https://imagify.io/">Imagify</a></li>
+        </ul>
+        <li>
+          Ferramentas de linha de comando como o pacote
+          <a href="https://imagemagick.org/index.php">ImageMagick</a> (Linux).
+        </li>
+      </ul>
+    </ul>
+
+    <h4>Dicas para otimização de Imagens</h4>
+    <ul>
+      <li>
+        Procure definir previamente qual o público alvo e em qual dispositivo
+        ele irá acessar seu conteúdo;
+      </li>
+      <li>Use preferencialmente os tamanhos:</li>
+      <ul>
+        <li>
+          <strong>150 x 150 pixels</strong> - Miniatura, como ícones e pequenas
+          logomarcas
+        </li>
+        <li>
+          <strong>300 x 300 pixels</strong> - Pequena, para imagens em geral;
+        </li>
+        <li>
+          <strong>600 x 600 pixels</strong> - Média, para imagens em geral;
+        </li>
+        <li>
+          <strong>1024 x 1024 pixels</strong> - Grande, para cabeçalhos e
+          imagens em background;
+        </li>
+        <li>
+          <strong>Até 1900 pixels</strong> - <i>Full Screen</i>, ideal para
+          imagens em tela cheia para telas grandes, como TV por exemplo;
+        </li>
+      </ul>
+      <li>
+        Utilize uma resolução das imagens em <strong>72 PPI</strong> (pixels por
+        polegadas);
+      </li>
+      <li>
+        Não deixe os tamanhos dos arquivos da imagens ultrapassar
+        <strong>150KB</strong> para imagens médias e <strong>400KB</strong> em
+        <i>Full Screen</i>;
+      </li>
+      <li>
+        Caso haja necessidade em ter imagens com maior resolução e tamanhos em
+        seu projeto, opte por gerar duas imagens, apresente a imagem pequena por
+        padrão e deixe o acesso a imagem grande em outra página ou
+        disponibilize-a para download como exemplo.
+      </li>
+    </ul>
+
+    <hr size="1" width="50%"" color="var(--color-blue)" align="center"/>
+
+    <h2>Tags e atributos para imagem.</h2>
+    <p>
+      Utilização das tags <strong>&lt;img&gt;</strong>,
+      <strong>&lt;figure&gt;</strong> e <strong>&lt;figcaption&gt</strong> para
+      criar imagens.
+    </p>
+    Propriedades:
+    <ul>
+      <li><strong>src</strong> - caminho da imagem;</li>
+      <li><strong>alt</strong> - descrição da imagem;</li>
+      <li><strong>width</strong> - largura da imagem;</li>
+      <li><strong>height</strong> - altura da imagem;</li>
+      <li><strong>class</strong> - classe da imagem;</li>
+      <li><strong>id</strong> - identificador da imagem;</li>
+      <li><strong>title</strong> - título da imagem;</li>
+    </ul>
+    <p>
+        exemplo 1:
+    </p>
+    <div class="code-exemple">
+      <pre class="">
+index.html
 <code class = "code">&lt;figure&gt;
     &lt;img 
-        id="img-senac" class="img" 
+        id="img-senac" class="img"
+        style="border: solid 2px var(--color-yellow);
+        border-radius: 10%;border;" 
         src="src/imgs/logo-senac-minas.webp" 
         alt="logotipo do Senac nas cores azul 
         e amarelo, em azul, no meio escrito 
@@ -129,74 +244,69 @@ Propriedades:
         </pre>
     </div>
 
-
-  <div class="fig-exemple">
+    <div class="fig-exemple">
       <figure>
-            <img 
-            id="img-senac" class="img" 
-            src="src/imgs/logo-senac-minas.webp" 
-            alt="logotipo do Senac nas cores azul e amarelo, em azul, no meio escrito Senac e embaixo escrito Minas Gerais"
-            width="30%"
-            height="auto"
-            title="Logo Senac MG" usemap="#map1" ismap />
-          <figcaption>Legenda: logotipo Senac Minas</figcaption>
-          <map name="map1">
-              <area shape="rect" coords="0,0,200,200" href="#" alt="Imagem 1">
-            </map>
-        </figure>
+        <img
+          id="img-senac"
+          class="img"
+          src="src/imgs/logo-senac-minas.webp"
+          alt="logotipo do Senac nas cores azul e amarelo, em azul, no meio escrito Senac e embaixo escrito Minas Gerais"
+          width="40%"
+          height="auto"
+          title="Logo Senac MG"
+          usemap="#map1"
+          ismap
+        />
+        <figcaption>Legenda: logotipo Senac Minas</figcaption>
+        <map name="map1">
+          <area shape="rect" coords="0,0,200,200" href="#" alt="Imagem 1" />
+        </map>
+      </figure>
     </div>
-    
+
     <h2>Animando Elementos com CSS</h2>
-  Utilização da proprieadade &lt;animation&gt; e suas sub-propriedades:
-  <ul>
+    <h3>Propriedades de classe <strong>animation</strong></h3>
+    <p>
+        Utilização da proprieadade &lt;animation&gt; e suas sub-propriedades:
+    </p>
+    <ul>
+      <li><strong>animation-delay</strong> - atraso da animação;</li>
+      <li><strong>animation-direction</strong> - direção da animação;</li>
+      <li><strong>animation-duration</strong> - duração da animação;</li>
       <li>
-          <strong>animation-delay</strong> - atraso da animação;
-        </li>
+        <strong>animation-iteration-count</strong> - número de repetições;
+      </li>
+      <li><strong>animation-name</strong> - nome da animação;</li>
+      <li><strong>animation-play-state</strong> - estado de reprodução;</li>
+      <li><strong>animation-timing-function</strong> - função de tempo;</li>
+      <li><strong>animation-fill-mode</strong> - modo de preenchimento.</li>
+    </ul>
+    <p>Utilização de <strong>@keyframes</strong>:</p>
+    <ul>
+      <li><strong>keyframes</strong> nome da animação;</li>
       <li>
-          <strong>animation-direction</strong> - direção da animação;
+        <strong>from</strong> - Determina os atributos do estado inicial da
+        animação;
       </li>
       <li>
-          <strong>animation-duration</strong> - duração da animação;
-        </li>
-        <li>
-            <strong>animation-iteration-count</strong> - número de repetições;
-        </li>
-        <li>
-        <strong>animation-name</strong> - nome da animação;
-    </li>
-    <li>
-        <strong>animation-play-state</strong> - estado de reprodução;
-    </li>
-    <li>
-        <strong>animation-timing-function</strong> - função de tempo;
-    </li>
-    <li>
-        <strong>animation-fill-mode</strong> - modo de preenchimento.
-    </li>
-  </ul> 
-<p>
-    Utilização de <strong>@keyframes</strong>:
-</p>
-<ul>
-    <li><strong>keyframes</strong> nome da animação;</li>
-    <li><strong>from</strong> - Determina os atributos do estado inicial da animação;</li>
-    <li><strong>to</strong> - Determina os atributos do estado final da animação.</li>
-</ul>
-
-<div class="code-exemple">
-    
-    <pre class="">
+        <strong>to</strong> - Determina os atributos do estado final da
+        animação.
+      </li>
+    </ul>
+    <p>
+        Exemplo 2:
+    </p>
+    <div class="code-exemple">
+      <pre class="">
 index.html
-<code class = "code">
-  &ltdiv class="animated-container"&gt
+<code class = "code">&ltdiv class="animated-container"&gt
     &lth2 class="animation"&gtExemplo&lt/h2&gt
   &lt/div>
 </code>
     </pre>
-</div>
-<div class="code-exemple">
-    
-    <pre class="">
+    </div>
+    <div class="code-exemple">
+      <pre class="">
 style.css
 <code class = "code">.animated-container {
     overflow: hidden; /* necessário para transbordamento */
@@ -223,17 +333,47 @@ style.css
   
     to {
       margin-left: 0%;
-      font-size: 3rem;
+      font-size: 2rem; /* cuidado com redimensionamentos! */
       color: var(--color-yellow);
     }
 </code>
     </pre>
-</div>
-
-
+    </div>
 
     <div class="animated-container">
-        <h2 class="animation">Exemplo</h2>   
+      <h2 class="animation">Exemplo</h2>
     </div>
-</body>
+    <h3>Animando com a biblioteca <strong>Animatecss</strong></h3>
+    <p>Uma maneira fácil e rápida de criar animações é utilizando a biblioteca de estilos<a href="https://animate.style/">Animate.css</a>. Esta biblioteca já  contém várias animações pré-configuradas.</p>
+    
+    <h4>Passos para utilização do Animate.css</h4>
+    <ol>
+        <li>Importe a arquivo de estilo no cabeçaho do documento;</li>
+        <li>Adicione a classe <strong>animate__animated animate__nome-da-animação</strong>, onde o <strong>nome-da-animação.</strong> encontra-se no site da biblioteca</li>
+    </ol>
+
+    <p>
+        Exemplo 3
+    </p>
+    <div class="code-exemple">
+        <pre class="">
+  index.html
+  <code class = "code">&lth1 
+    class="animated__animate anitmate__pulse animate__infinite"&gt
+&lt/h1>
+  </code>
+      </pre>
+      </div>
+    <h1 class="animated-container animatecss animate__animated animate__pulse animate__infinite">Animate</h1>
+    <p>Observações</p>
+    <ul>
+        <li>Utilize animações com parciomônia! Não exagere na quantidade!</li>
+        <li>Utilize apenas em elementos que deseja chamar a atenção!</li>
+        <li>Algumas propriedades, especialmente relativo ao tamanho <strong>width</strong> e <strong>height</strong> podem causar efeitos indesejáveis!</li>
+        <li>Cuidado com <strong>repetições infinitas</strong>. Tente evitar esse procedimento!</li>
+    </ul>
+
+    <p class="credits">Atenciosamente, <strong><i>Luciano Sacramento</i></strong>.</p>
+  </body>
+
 </html>
