@@ -12,8 +12,8 @@
     <meta name="author" content="Luciano Sacramento" />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <title>Roteiro de Aula - Imagens e Animações</title>
   </head>
@@ -217,9 +217,7 @@
       <li><strong>id</strong> - identificador da imagem;</li>
       <li><strong>title</strong> - título da imagem;</li>
     </ul>
-    <p>
-        exemplo 1:
-    </p>
+    <p>exemplo 1:</p>
     <div class="code-exemple">
       <pre class="">
 index.html
@@ -264,11 +262,91 @@ index.html
       </figure>
     </div>
 
+    <h2>Construindo Tabelas</h2>
+    <ul>
+      <li><strong>table</strong> - table - table (Tabela)</li>
+      <li><strong>caption</strong> - table caption (Título da tabela)</li>
+      <li><strong>tr</strong> - table row (Linha da tabela)</li>
+      <li><strong>td</strong> - table data (Dados da tabela)</li>
+      <li><strong>th</strong> - table header (Cabeçalho da tabela)</li>
+    </ul>
+    <div class="code-exemple">
+      <pre>
+        <code class="code">
+    &lt;div class="table">
+        &lt;table>
+            &lt;caption>Tabela de Exemplo&lt;/caption>
+            &lt;tr>
+                &lt;th>cabeçalho 1&lt;/th>
+                &lt;th>cabeçalho 2&lt;/th>
+                &lt;th>cabeçalho 3&lt;/th>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>linha 1 coluna 1&lt;/td>
+                &lt;td>linha 1 coluna 2&lt;/td>
+                &lt;td>linha 1 coluna 3&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>linha 2 coluna 1&lt;/td>
+                &lt;td>linha 2 coluna 2&lt;/td>
+                &lt;td>linha 2 coluna 3&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td>linha 3 coluna 1&lt;/td>
+                &lt;td>linha 3 coluna 2&lt;/td>
+                &lt;td>linha 3 coluna 3&lt;/td>
+            &lt;/tr>
+            &lt;tfoot>
+                &lt;tr>
+                  &lt;td>rodapé 1&lt;/td>
+                  &lt;td>rodapé 2&lt;/td>
+                  &lt;td>rodapé 3&lt;/td>
+                &lt;/tr>
+            &lt;/tfoot>
+        &lt;/table>
+    &lt;/div>
+    </code>
+    </pre>
+    </div>
+
+    <div class="table">
+      <table>
+        <caption>
+          Tabela de Exemplo
+        </caption>
+        <tr>
+          <th>cabeçalho 1</th>
+          <th>cabeçalho 2</th>
+          <th>cabeçalho 3</th>
+        </tr>
+        <tr>
+          <td>linha 1 coluna 1</td>
+          <td>linha 1 coluna 2</td>
+          <td>linha 1 coluna 3</td>
+        </tr>
+        <tr>
+          <td>linha 2 coluna 1</td>
+          <td>linha 2 coluna 2</td>
+          <td>linha 2 coluna 3</td>
+        </tr>
+        <tr>
+          <td>linha 3 coluna 1</td>
+          <td>linha 3 coluna 2</td>
+          <td>linha 3 coluna 3</td>
+        </tr>
+        <tfoot>
+          <tr>
+            <td>rodapé 1</td>
+            <td>rodapé 2</td>
+            <td>rodapé 3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
     <h2>Animando Elementos com CSS</h2>
     <h3>Propriedades de classe <strong>animation</strong></h3>
-    <p>
-        Utilização da proprieadade &lt;animation&gt; e suas sub-propriedades:
-    </p>
+    <p>Utilização da proprieadade &lt;animation&gt; e suas sub-propriedades:</p>
     <ul>
       <li><strong>animation-delay</strong> - atraso da animação;</li>
       <li><strong>animation-direction</strong> - direção da animação;</li>
@@ -293,9 +371,7 @@ index.html
         animação.
       </li>
     </ul>
-    <p>
-        Exemplo 2:
-    </p>
+    <p>Exemplo 2:</p>
     <div class="code-exemple">
       <pre class="">
 index.html
@@ -344,36 +420,55 @@ style.css
       <h2 class="animation">Exemplo</h2>
     </div>
     <h3>Animando com a biblioteca <strong>Animatecss</strong></h3>
-    <p>Uma maneira fácil e rápida de criar animações é utilizando a biblioteca de estilos<a href="https://animate.style/">Animate.css</a>. Esta biblioteca já  contém várias animações pré-configuradas.</p>
-    
+    <p>
+      Uma maneira fácil e rápida de criar animações é utilizando a biblioteca de
+      estilos<a href="https://animate.style/">Animate.css</a>. Esta biblioteca
+      já contém várias animações pré-configuradas.
+    </p>
+
     <h4>Passos para utilização do Animate.css</h4>
     <ol>
-        <li>Importe a arquivo de estilo no cabeçaho do documento;</li>
-        <li>Adicione a classe <strong>animate__animated animate__nome-da-animação</strong>, onde o <strong>nome-da-animação.</strong> encontra-se no site da biblioteca</li>
+      <li>Importe a arquivo de estilo no cabeçaho do documento;</li>
+      <li>
+        Adicione a classe
+        <strong>animate__animated animate__nome-da-animação</strong>, onde o
+        <strong>nome-da-animação.</strong> encontra-se no site da biblioteca
+      </li>
     </ol>
 
-    <p>
-        Exemplo 3
-    </p>
+    <p>Exemplo 3</p>
     <div class="code-exemple">
-        <pre class="">
+      <pre class="">
   index.html
   <code class = "code">&lth1 
     class="animated__animate anitmate__pulse animate__infinite"&gt
 &lt/h1>
   </code>
       </pre>
-      </div>
-    <h1 class="animated-container animatecss animate__animated animate__pulse animate__infinite">Animate</h1>
+    </div>
+    <h1
+      class="animated-container animatecss animate__animated animate__pulse animate__infinite"
+    >
+      Animate
+    </h1>
     <p>Observações</p>
     <ul>
-        <li>Utilize animações com parciomônia! Não exagere na quantidade!</li>
-        <li>Utilize apenas em elementos que deseja chamar a atenção!</li>
-        <li>Algumas propriedades, especialmente relativo ao tamanho <strong>width</strong> e <strong>height</strong> podem causar efeitos indesejáveis!</li>
-        <li>Cuidado com <strong>repetições infinitas</strong>. Tente evitar esse procedimento!</li>
+      <li>Utilize animações com parciomônia! Não exagere na quantidade!</li>
+      <li>Utilize apenas em elementos que deseja chamar a atenção!</li>
+      <li>
+        Algumas propriedades, especialmente relativo ao tamanho
+        <strong>width</strong> e <strong>height</strong> podem causar efeitos
+        indesejáveis!
+      </li>
+      <li>
+        Cuidado com <strong>repetições infinitas</strong>. Tente evitar esse
+        procedimento!
+      </li>
     </ul>
 
-    <p class="credits">Atenciosamente, <strong><i>Luciano Sacramento</i></strong>.</p>
+    <p class="credits">
+      Atenciosamente, <strong><i>Luciano Sacramento</i></strong
+      >.
+    </p>
   </body>
-
 </html>
